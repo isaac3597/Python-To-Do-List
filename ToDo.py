@@ -1,5 +1,5 @@
 def add_task(task):
-    with open("todo.txt", "a") as file:
+    with open("Todo.txt", "a") as file:
         file.write(task + "\n")
 
 def remove_task(task):
