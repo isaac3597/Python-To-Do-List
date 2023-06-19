@@ -3,15 +3,15 @@ def add_task(task):
         file.write(task + "\n")
 
 def remove_task(task):
-    with open("todo.txt", "r") as file:
+    with open("Todo.txt", "r") as file:
         lines = file.readlines()
-    with open("todo.txt", "w") as file:
+    with open("Todo.txt", "w") as file:
         for line in lines:
             if line.strip("\n") != task:
                 file.write(line)
 
 def view_tasks():
-    with open("todo.txt", "r") as file:
+    with open("Todo.txt", "r") as file:
         tasks = file.readlines()
     if tasks:
         for i, task in enumerate(tasks, start=1):
