@@ -20,7 +20,7 @@ def view_tasks():
         print("No tasks found.")
 
 while True:
-    print("\n1. Add task\n2. Remove task\n3. View tasks\n4. Exit")
+    print("\n1. Add task\n2. Remove task\n3. View tasks\n4. Exit..")
     choice = input("Enter your choice: ")
     if choice == "1":
         task = input("Enter task: ")
